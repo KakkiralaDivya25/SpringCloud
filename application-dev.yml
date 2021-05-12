@@ -1,2 +1,31 @@
-my:
-   greeting: Hello Dev Profile
+patient.url=https://api.logicahealth.org/DSTUStandbox/data/Patient
+device.url=https://iomtfhir.azurehealthcareapis.com/Device
+patient.identifier.url.std=http://hl7.org/fhir/sid/us-ssn
+#patient.get.url=${patient.url}?
+patient.count=_count=100
+#Get by patient Id
+#patient.by.patientId=${patient.url}?identifier=
+#Get patients by organization
+organization.url=organization=Organization/
+patient.by.organization.url.prefix=${patient.url}?${organization.url}
+patient.by.organization.url.suffix=&identifier=
+#Get patients by physician ID
+patient.by.physician.url =${patient.url}?general-practitioner=Practitioner/
+patient.by.physician.suffix=&${organization.url}
+
+#Save Patient observation
+patient.observation.url=https://iomtfhir.azurehealthcareapis.com/Observation
+#Get patients by observation
+patient.by.observation.prefix=${patient.observation.url}?patient=Patient/
+patient.by.observation.suffix=&code=8302-2,29463-7
+
+#Save RiskAssessment
+patient.riskAssessment.url=https://iomtfhir.azurehealthcareapis.com/RiskAssessment
+#Get RiskAssessment by patient
+patient.riskAss.suffix=${patient.riskAssessment.url}?patient=Patient/
+
+fhir.clientId=32a1883d-c8ba-446b-9d81-8fa2a829f62a
+fhir.clientSecret=4UG_30zm~yt4wPkqb6GgY~C-35NEq3Id2C
+fhir.resource=https://iomtfhir.azurehealthcareapis.com
+fhir.grantType=client_credentials
+fhir.authtoken=https://login.microsoftonline.com/ebd95286-551e-4b34-9fef-60b74293d1f9/oauth2/token
