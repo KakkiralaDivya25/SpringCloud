@@ -2,6 +2,8 @@ iomtenv:
       details: IOMT DEMO
 device:
     url: https://iomtfhir.azurehealthcareapis.com/Device
+    metadata:
+        url: http://devicemetadataapidemo.azurewebsites.net?csvDeviceIds=
 fhir:
     authtoken: https://login.microsoftonline.com/ebd95286-551e-4b34-9fef-60b74293d1f9/oauth2/token
     clientId: 32a1883d-c8ba-446b-9d81-8fa2a829f62a
