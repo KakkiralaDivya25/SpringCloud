@@ -1,3 +1,5 @@
+iomtenv:
+      details: DEMO
 device:
     url: https://iomtfhir.azurehealthcareapis.com/Device
 fhir:
