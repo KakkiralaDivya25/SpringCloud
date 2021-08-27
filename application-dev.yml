@@ -1,5 +1,5 @@
 device:
-    url: https://iomtfhir.azurehealthcareapis.com/Device
+    url: https://iomtfhir.azurehealthcareapis.com/Device1
     metadata:
       url: http://devicemetadataapidev.azurewebsites.net?csvDeviceIds=
 fhir:
