@@ -1,13 +1,13 @@
 device:
-    url: https://iomtfhir.azurehealthcareapis.com/Device1
+    url: https://iomtfhir.azurehealthcareapis.com/Device
     metadata:
       url: http://devicemetadataapidev.azurewebsites.net?csvDeviceIds=
 fhir:
     authtoken: https://login.microsoftonline.com/ebd95286-551e-4b34-9fef-60b74293d1f9/oauth2/token
-    clientId: 32a1883d-c8ba-446b-9d81-8fa2a829f62a1
-    clientSecret: 4UG_30zm~yt4wPkqb6GgY~C-35NEq3Id2C1
-    grantType: client_credentials1
-    resource: https://iomtfhir.azurehealthcareapis.com1
+    clientId: 32a1883d-c8ba-446b-9d81-8fa2a829f62a
+    clientSecret: 4UG_30zm~yt4wPkqb6GgY~C-35NEq3Id2C
+    grantType: client_credentials
+    resource: https://iomtfhir.azurehealthcareapis.com
 organization:
     url: organization=Organization/
 patient:
