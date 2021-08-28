@@ -1,2 +1,2 @@
-device:
-url:test
+my:
+   greeting: config server testing
